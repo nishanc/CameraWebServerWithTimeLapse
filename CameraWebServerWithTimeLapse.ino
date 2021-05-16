@@ -276,7 +276,7 @@ static esp_err_t save_photo_dated()
 void save_photo()
 {
   if (timeinfo.tm_year < (2016 - 1900) || internet_connected == false) { // if no internet or time not set
-    save_photo_numbered(); // filenames with date and time; // filenames in numbered order
+    save_photo_numbered(); // filenames in numbered order
   } else {
     save_photo_dated(); // filenames with date and time
   }
